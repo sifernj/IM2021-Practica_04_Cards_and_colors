@@ -17,6 +17,7 @@
 package com.example.android.materialme;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,8 +37,6 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
     // Member variables.
     private ArrayList<Sport> mSportsData;
     private Context mContext;
-
-    private ImageView mSportsImage;
 
     /**
      * Constructor that passes in the sports data and the context.
@@ -101,6 +100,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
         // Member Variables for the TextViews
         private TextView mTitleText;
         private TextView mInfoText;
+        private ImageView mSportsImage;
 
         /**
          * Constructor for the ViewHolder, used in onCreateViewHolder().
@@ -113,7 +113,6 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             // Initialize the views.
             mTitleText = itemView.findViewById(R.id.title);
             mInfoText = itemView.findViewById(R.id.subTitle);
-
             mSportsImage = itemView.findViewById(R.id.sportsImage);
         }
 

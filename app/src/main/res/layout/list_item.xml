@@ -13,12 +13,11 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:orientation="vertical">
+    android:layout_margin="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,35 +28,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/title_placeholder"
+            android:layout_alignBottom="@id/sportsImage"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        <TextView
+            android:id="@+id/newsTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/news_placeholder"
+            android:layout_below="@id/sportsImage"
+            android:textColor="?android:textColorSecondary"/>
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/sports_info_placeholder"
+            android:layout_below="@id/newsTitle"/>
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/title"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/title_placeholder"
-        android:layout_alignBottom="@id/sportsImage"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
-
-    <TextView
-        android:id="@+id/newsTitle"
-        style="@style/TextAppearance.AppCompat.Subhead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/news_placeholder"
-        android:layout_below="@id/sportsImage"
-        android:textColor="?android:textColorSecondary"/>
-
-    <TextView
-        android:id="@+id/subTitle"
-        style="@style/TextAppearance.AppCompat.Subhead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/sports_info_placeholder"
-        android:layout_below="@id/newsTitle"/>
 
 </android.support.v7.widget.CardView>
